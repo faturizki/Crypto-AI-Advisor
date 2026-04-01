@@ -1,0 +1,26 @@
+{
+  "name": "crypto-ai-advisor",
+  "version": "1.0.0",
+  "description": "AI-powered crypto token analyzer dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "start:backend": "turbo run start --filter=@crypto-ai/backend",
+    "start:dashboard": "turbo run start --filter=@crypto-ai/dashboard"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
